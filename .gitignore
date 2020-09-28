@@ -3,3 +3,5 @@ out
 *.iml
 kaggle/kaggle-venv
 *.ipynb_checkpoints
+target
+*.out
