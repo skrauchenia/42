@@ -17,7 +17,9 @@ public class Fibonacci {
       fibs[i] = fib;
     }
 
-    return fibs[n];
+    System.out.println(fibs.length);
+
+    return fibs[n - 1];
   }
 
   public static void main(String[] args) {
