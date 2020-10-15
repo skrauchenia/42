@@ -1,7 +1,5 @@
 package w2
 
-import java.util.Scanner
-
 object Fib extends App {
 
   type Acc = Map[Int, BigInt]
@@ -24,7 +22,7 @@ object Fib extends App {
   }
 
   override def main(args: Array[String]): Unit = {
-    val sc = new Scanner(System.in)
+    val sc = new java.util.Scanner(System.in)
 //    val (result, _) = fib(sc.nextInt())
     val n = sc.nextInt()
 //    println(s"${fibArr(n)}\n${fibMemo(n)._1}")

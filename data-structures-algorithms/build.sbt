@@ -4,4 +4,7 @@ version := "0.1"
 
 scalaVersion := "2.12.8"
 
-Compile / scalaSource := baseDirectory.value / "algorithmic-toolbox"
+lazy val course1 = (project in file("algorithmic-toolbox"))
+  .settings(
+    // other settings
+  )
