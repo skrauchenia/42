@@ -23,9 +23,7 @@ object Fib extends App {
 
   override def main(args: Array[String]): Unit = {
     val sc = new java.util.Scanner(System.in)
-//    val (result, _) = fib(sc.nextInt())
     val n = sc.nextInt()
-//    println(s"${fibArr(n)}\n${fibMemo(n)._1}")
     println(s"${fibArr(n)}")
   }
 }
