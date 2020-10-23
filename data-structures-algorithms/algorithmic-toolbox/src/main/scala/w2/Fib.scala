@@ -1,4 +1,3 @@
-package w2
 
 object Fib extends App {
 
@@ -21,9 +20,26 @@ object Fib extends App {
     }.last
   }
 
+  def fibFast(n: Int): BigInt = {
+    if (n <= 1) n
+    else {
+      var previous: BigInt = 0
+      var current: BigInt = 1
+
+      (0 until n - 1).foreach { _ =>
+        val tmp_previous = previous
+        previous = current
+
+        current = tmp_previous + previous
+      }
+
+      current
+    }
+  }
+
   override def main(args: Array[String]): Unit = {
     val sc = new java.util.Scanner(System.in)
     val n = sc.nextInt()
-    println(s"${fibArr(n)}")
+    println(s"${fibFast(n)}")
   }
 }
