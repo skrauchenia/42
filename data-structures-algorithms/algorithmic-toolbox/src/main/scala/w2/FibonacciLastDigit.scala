@@ -1,4 +1,4 @@
-
+package w2
 
 object FibonacciLastDigit extends App {
 

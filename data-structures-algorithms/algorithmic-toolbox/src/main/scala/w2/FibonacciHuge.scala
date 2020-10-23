@@ -1,4 +1,4 @@
-
+package w2
 
 object FibonacciHuge extends App {
 
