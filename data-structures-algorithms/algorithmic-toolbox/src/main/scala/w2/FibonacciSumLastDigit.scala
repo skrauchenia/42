@@ -1,3 +1,5 @@
+package w2
+
 object FibonacciSumLastDigit extends App {
 
   /**

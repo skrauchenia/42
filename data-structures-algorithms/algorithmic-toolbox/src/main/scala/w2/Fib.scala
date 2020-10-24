@@ -1,3 +1,4 @@
+package w2
 
 object Fib extends App {
 
